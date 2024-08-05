@@ -4,10 +4,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
-# Load your dataset
+# Loading Dataset
 data = pd.read_csv('datasets/PremierLeague.csv')
 
-# Create features for each team
+# Creating features for each team
 features = []
 
 teams = pd.concat([data['home_team_name'], data['away_team_name']]).unique()
